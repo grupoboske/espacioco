@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESPACIO CO | Diseño & Arquitectura</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0B1D1A;
+      --secondary: #6E8B7B;
+      --accent: #A3B18A;
+      --light: #F5F7F6;
+      --white: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--light);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    header {
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+
+    .cta-btn {
+      background: var(--primary);
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .cta-btn:hover {
+      background: var(--secondary);
+    }
+
+    .hero {
+      padding: 100px 0 80px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--secondary);
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .hero .cta-btn {
+      margin-top: 30px;
+      display: inline-block;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .process {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .process div {
+      background: var(--white);
+      padding: 20px;
+      border-left: 4px solid var(--accent);
+    }
+
+    .cta-section {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 14px;
+      color: var(--secondary);
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 { font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="container">
+  <h1>ESPACIO CO</h1>
+  <a href="https://wa.me/527222048192" class="cta-btn">Contacto</a>
+</header>
+
+<section class="hero container">
+  <h2>Diseñamos espacios que generan valor</h2>
+  <p>
+    En ESPACIO CO desarrollamos proyectos arquitectónicos estratégicos, pensados no solo para habitarse,
+    sino para maximizar su potencial comercial, funcional y estético.
+  </p>
+  <a href="https://wa.me/527222048192" class="cta-btn">Solicitar asesoría</a>
+</section>
+
+<section class="section container">
+  <div class="grid">
+    <div class="card">
+      <h3>Arquitectura estratégica</h3>
+      <p>Diseñamos con enfoque en retorno de inversión, optimización del terreno y demanda del mercado.</p>
+    </div>
+    <div class="card">
+      <h3>Proyectos ejecutivos</h3>
+      <p>Entregamos proyectos completos listos para construirse, con claridad técnica total.</p>
+    </div>
+    <div class="card">
+      <h3>Optimización de espacios</h3>
+      <p>Cada metro cuadrado es diseñado para cumplir un propósito funcional y comercial.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section container">
+  <h2 style="text-align:center; margin-bottom:40px;">Nuestro proceso</h2>
+  <div class="process">
+    <div>
+      <strong>1. Análisis</strong>
+      <p>Evaluamos terreno, contexto y potencial del proyecto.</p>
+    </div>
+    <div>
+      <strong>2. Concepto</strong>
+      <p>Definimos una propuesta alineada al mercado y al usuario final.</p>
+    </div>
+    <div>
+      <strong>3. Desarrollo</strong>
+      <p>Generamos planos arquitectónicos y ejecutivos completos.</p>
+    </div>
+    <div>
+      <strong>4. Implementación</strong>
+      <p>Acompañamos la transición hacia la construcción.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>¿Tienes un terreno o proyecto en mente?</h2>
+  <p>Evaluamos su potencial sin costo.</p>
+  <br>
+  <a href="https://wa.me/527222048192" class="cta-btn">Hablar ahora</a>
+</section>
+
+<footer>
+  © 2026 ESPACIO CO | Grupo BOSKE
+</footer>
+
+</body>
+</html>
